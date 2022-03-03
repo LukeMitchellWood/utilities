@@ -1,4 +1,4 @@
-module.exports = function deepFreeze(obj) {
+function deepFreeze(obj) {
     const frozen = {}
     Object.keys(obj).forEach(k => {
         if (typeof obj[k] === 'object' || typeof obj[k] === 'function') {
